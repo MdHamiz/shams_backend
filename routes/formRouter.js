@@ -4,7 +4,7 @@ const formData = require("../models/formData.js");
 const router = express.Router();
 
 // ✅ POST -> Save form
-router.post("/submit-form", async (req, res) => {
+router.post("/enroll", async (req, res) => {
     try {
         const { name, phone, studentClass, school, address, parentName } = req.body;
 
