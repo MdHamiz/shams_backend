@@ -10,11 +10,17 @@ connectDB();
 const app = express();
 const PORT = process.env.PORT || 6000;
 
+const allowedOrigins = [
+  "http://localhost:5173",
+  "https://shams-25kj2rzyl-mdhamizs-projects.vercel.app"
+];
+
 app.use(cors({
-  origin:["https://shams-25kj2rzyl-mdhamizs-projects.vercel.app"], 
+  origin: allowedOrigins,
   methods: ["GET","POST","PUT","DELETE"],
   credentials: true
 }));
+
  
 app.use(express.json());
 app.use(express.static("public"));
