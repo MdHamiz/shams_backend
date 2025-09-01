@@ -31,7 +31,7 @@ router.post("/enroll", async (req, res) => {
 });
 
 // ✅ GET -> All forms
-router.get("/submit-form", async (req, res) => {
+router.get("/enroll", async (req, res) => {
     try {
         const forms = await formData.find();
         res.status(200).json({ success: true, data: forms });
