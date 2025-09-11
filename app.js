@@ -36,6 +36,10 @@ app.use((req, res, next) => {
   next();
 });
 
+app.get("/api/enroll", (req, res) => {
+  res.json({ message: "Backend is working ✅" });
+});
+
 
 app.listen(PORT, () => {
     console.log(`App is running on port: ${PORT}`);
