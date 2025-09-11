@@ -14,7 +14,7 @@ const allowedOrigins = [
   "http://localhost:5173",
   "https://shams-d38ov60wj-mdhamizs-projects.vercel.app" ,
   "https://shams-16zwtl5hn-mdhamizs-projects.vercel.app",
-  "https://shams-kappa.vercel.app/"
+  "https://shams-kappa.vercel.app"
 ];
 
 app.use(cors({
